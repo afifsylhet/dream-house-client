@@ -1,11 +1,18 @@
-const data = [
+export const data = [
     {
         sl: 1,
         name1: "Home in Palace Garden",
         location: "Palace Garden, Miami, FL 32836, USA",
         type: "For Sale",
         price: 469780,
-        img: [],
+        img: [
+            "https://i.ibb.co/NLM57SB/flat-1-img-1.jpg",
+            "https://i.ibb.co/YpJnWby/flat-1-img-2.jpg",
+            "https://i.ibb.co/GJ24pz5/flat-1-img-3.jpg",
+            "https://i.ibb.co/9m0hHf2/flat-1-img-4.jpg",
+            "https://i.ibb.co/Qb3Rqpd/flat-1-img-5.jpg",
+            "https://i.ibb.co/F0pMrGw/flat-1-img-6.jpg"
+        ],
         porpertyID: "PG-2022-01",
         bedRoom: 3,
         bathRoom: 3,
@@ -35,7 +42,14 @@ const data = [
         location: "Suite Lounge, Hunag, ML 54711, USA",
         type: "For Sale",
         price: 1097480,
-        img: [],
+        img: [
+            "https://i.ibb.co/4fF1c3m/flat-2-img-1.jpg",
+            "https://i.ibb.co/71Cjc1x/flat-2-img-2.jpg",
+            "https://i.ibb.co/Yt43Z94/flat-2-img-3.jpg",
+            "https://i.ibb.co/svNfzQq/flat-2-img-4.jpg",
+            "https://i.ibb.co/b5PNd9t/flat-2-img-5.jpg",
+            "https://i.ibb.co/r04vn5w/flat-3-img-6.jpg"
+        ],
         porpertyID: "ML-2021-11",
         bedRoom: 4,
         bathRoom: 3,
@@ -65,7 +79,14 @@ const data = [
         location: "Brown Avenue, Lake Tahoe, CA 54711, USA",
         type: "For Sale",
         price: 307480,
-        img: [],
+        img: [
+            "https://i.ibb.co/vQXKsbc/flat-3-img-1.jpg",
+            "https://i.ibb.co/Trbyssg/flat-3-img-2.jpg",
+            "https://i.ibb.co/L8DJx9G/flat-3-img-3.jpg",
+            "https://i.ibb.co/5581dsW/flat-3-img-4.jpg",
+            "https://i.ibb.co/f4gnSN1/flat-3-img-5.jpg",
+            "https://i.ibb.co/r04vn5w/flat-3-img-6.jpg"
+        ],
         porpertyID: "CA-2021-10",
         bedRoom: 5,
         bathRoom: 3,
@@ -95,7 +116,14 @@ const data = [
         location: "Alan Avenue, Lake Tahoe, CA 89711, USA",
         type: "For Sale",
         price: 171470,
-        img: [],
+        img: [
+            "https://i.ibb.co/Bspq2mD/flat-4-img-1.jpg",
+            "https://i.ibb.co/0fSsyKd/flat-4-img-2.jpg",
+            "https://i.ibb.co/PWFZtQT/flat-4-img-3.jpg",
+            "https://i.ibb.co/6DJNzYC/flat-4-img-4.jpg",
+            "https://i.ibb.co/qyXDrRd/flat-4-img-5.jpg",
+            "https://i.ibb.co/KLBf5LR/flat-4-img-6.jpg"
+        ],
         porpertyID: "CA-2018-10",
         bedRoom: 3,
         bathRoom: 3,
@@ -125,7 +153,14 @@ const data = [
         location: "Niki Avenue, Lake Tahoe, FL 30711, USA",
         type: "For Sale",
         price: 1095470,
-        img: [],
+        img: [
+            "https://i.ibb.co/nBHNhTW/flat-5-img-1.jpg",
+            "https://i.ibb.co/71Cjc1x/flat-2-img-2.jpg",
+            "https://i.ibb.co/nsgBNTr/flat-5-img-3.jpg",
+            "https://i.ibb.co/sFn97HZ/flat-5-img-4.jpg",
+            " https://i.ibb.co/b5PNd9t/flat-2-img-5.jpg",
+            "https://i.ibb.co/qyXDrRd/flat-4-img-5.jpg"
+        ],
         porpertyID: "CA-2021-12",
         bedRoom: 5,
         bathRoom: 5,
@@ -155,7 +190,14 @@ const data = [
         location: "Hallry Sopt, Hadsone Street, TX 30711, USA",
         type: "For Sale",
         price: 930450,
-        img: [],
+        img: [
+            "https://i.ibb.co/kxJ0sv0/flat-6-img-1.jpg",
+            "https://i.ibb.co/NjNRZ1m/flat-6-img-2.jpg",
+            "https://i.ibb.co/nsgBNTr/flat-5-img-3.jpg",
+            "https://i.ibb.co/sFn97HZ/flat-5-img-4.jpg",
+            "https://i.ibb.co/9m0hHf2/flat-1-img-4.jpg",
+            "https://i.ibb.co/6DJNzYC/flat-4-img-4.jpg"
+        ],
         porpertyID: "CA-2022-01",
         bedRoom: 4,
         bathRoom: 4,
@@ -185,7 +227,14 @@ const data = [
         location: "Clinton Street, New York, NY 5711, USA",
         type: "For Sale",
         price: 293450,
-        img: [],
+        img: [
+            "https://i.ibb.co/6DGj6j2/flat-7-img-1.jpg",
+            "https://i.ibb.co/jDxLp9J/flat-7-img-2.jpg",
+            "https://i.ibb.co/Gtm00YJ/flat-7-img-3.jpg",
+            "https://i.ibb.co/svNfzQq/flat-2-img-4.jpg",
+            "https://i.ibb.co/nsgBNTr/flat-5-img-3.jpg",
+            "https://i.ibb.co/L8DJx9G/flat-3-img-3.jpg"
+        ],
         porpertyID: "NY-2021-06",
         bedRoom: 4,
         bathRoom: 4,
@@ -215,7 +264,14 @@ const data = [
         location: "Samara Avenue, Wall Street, WS 6121, USA",
         type: "For Sale",
         price: 597453,
-        img: [],
+        img: [
+            "https://i.ibb.co/0hcL3DL/flat-8-img-1.jpg",
+            "https://i.ibb.co/9m0hHf2/flat-1-img-4.jpg",
+            "https://i.ibb.co/PWFZtQT/flat-4-img-3.jpg",
+            "https://i.ibb.co/w6d4GmG/flat-8-img-4.jpg",
+            "https://i.ibb.co/f4gnSN1/flat-3-img-5.jpg",
+            "https://i.ibb.co/6DJNzYC/flat-4-img-4.jpg"
+        ],
         porpertyID: "WS-2020-09",
         bedRoom: 5,
         bathRoom: 5,
@@ -245,7 +301,14 @@ const data = [
         location: "Gorge Boosh Palace, Kamal Street, NJ 851, USA",
         type: "For Sale",
         price: 987423,
-        img: [],
+        img: [
+            "https://i.ibb.co/56Bbj3m/flat-10-img-1.jpg",
+            "https://i.ibb.co/Yt43Z94/flat-2-img-3.jpg",
+            "https://i.ibb.co/YpJnWby/flat-1-img-2.jpg",
+            "https://i.ibb.co/Qb3Rqpd/flat-1-img-5.jpg",
+            "https://i.ibb.co/GJ24pz5/flat-1-img-3.jpg",
+            "https://i.ibb.co/L8DJx9G/flat-3-img-3.jpg"
+        ],
         porpertyID: "WS-2015-12",
         bedRoom: 4,
         bathRoom: 4,
@@ -275,7 +338,14 @@ const data = [
         location: "Silicon Vally, Califorinea, CA 54851, USA",
         type: "For Sale",
         price: 1287423,
-        img: [],
+        img: [
+            "https://i.ibb.co/56Bbj3m/flat-10-img-1.jpg",
+            "https://i.ibb.co/PWFZtQT/flat-4-img-3.jpg",
+            "https://i.ibb.co/KLBf5LR/flat-4-img-6.jpg",
+            "https://i.ibb.co/Bspq2mD/flat-4-img-1.jpg",
+            "https://i.ibb.co/71Cjc1x/flat-2-img-2.jpg",
+            "https://i.ibb.co/r04vn5w/flat-3-img-6.jpg"
+        ],
         porpertyID: "WS-2021-10",
         bedRoom: 6,
         bathRoom: 6,
@@ -305,7 +375,14 @@ const data = [
         location: "Injection House, Atlanta, AL 74355, USA",
         type: "For Sale",
         price: 587423,
-        img: [],
+        img: [
+            "https://i.ibb.co/4fF1c3m/flat-2-img-1.jpg",
+            "https://i.ibb.co/NjNRZ1m/flat-6-img-2.jpg",
+            "https://i.ibb.co/5581dsW/flat-3-img-4.jpg",
+            "https://i.ibb.co/9m0hHf2/flat-1-img-4.jpg",
+            "https://i.ibb.co/9m0hHf2/flat-1-img-4.jpg",
+            "https://i.ibb.co/L8DJx9G/flat-3-img-3.jpg"
+        ],
         porpertyID: "WS-2020-11",
         bedRoom: 5,
         bathRoom: 5,

@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1000px) {
+    .topFormContainer {
+      position: relative;
+    }
+    .topForm{
+        max-width: 420px;
+        position: absolute;
+        top:200px;
+        right: 100px;
+    }
+  }
