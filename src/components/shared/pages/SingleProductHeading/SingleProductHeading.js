@@ -15,6 +15,7 @@ function srcset(image, size, rows = 2, cols = 3) {
 const SingleProductHeading = () => {
     return (
         <div>
+            <br />
             <Container>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <div>
@@ -27,11 +28,7 @@ const SingleProductHeading = () => {
                         <Typography sx={{ color: '#795548' }} variant='h5'>For Sale</Typography>
                     </div>
                 </div>
-                <br />
-                <br />
-                <br />
                 <ImageList
-                    // sx={{ width: 500, height: 450 }}
                     variant="quilted"
                     cols={4}
                     rowHeight={121}
@@ -46,6 +43,7 @@ const SingleProductHeading = () => {
                         </ImageListItem>
                     ))}
                 </ImageList>
+
             </Container>
         </div>
     );

@@ -21,28 +21,9 @@ const SingleProduct = () => {
     return (
         <div>
             <SingleProductHeading></SingleProductHeading>
-            <br />
-            <br />
-            <br />
+
             <Container>
-                <Paper elevation={8}>
-                    <Box sx={{ flexGrow: 1 }}>
-                        <Grid container spacing={3}>
-                            <Grid item xs={12} sm={8}>
-                                <Item sx={{ textAlign: 'left' }}>
 
-
-
-
-                                </Item>
-
-                            </Grid>
-                            <Grid item xs={12} sm={4}>
-                                <Item>xs=6</Item>
-                            </Grid>
-                        </Grid>
-                    </Box>
-                </Paper>
             </Container>
         </div>
     );

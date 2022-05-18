@@ -51,7 +51,7 @@ const Product = () => {
                                     <Typography color='primary' variant='subtitle2' >Bedrooms</Typography>
                                     <div style={{ display: 'flex', alignItems: 'center' }}>
                                         <IoBedOutline size={25} style={{ color: 'lightBlue' }} />
-                                        <span style={{ color: 'blue', marginLeft: '5px' }}>3</span>
+                                        <span style={{ color: '#63bcef', marginLeft: '5px' }}>3</span>
                                     </div>
                                 </Item>
                             </Grid>
@@ -61,7 +61,7 @@ const Product = () => {
                                     <Typography color='primary' variant='subtitle2'>Bathrooms</Typography>
                                     <div style={{ display: 'flex', alignItems: 'center' }}>
                                         <FaShower size={25} style={{ color: 'lightBlue' }} />
-                                        <span style={{ color: 'blue', marginLeft: '5px' }}>3</span>
+                                        <span style={{ color: '#63bcef', marginLeft: '5px' }}>3</span>
                                     </div>
                                 </Item>
                             </Grid>
@@ -71,7 +71,7 @@ const Product = () => {
                                     <Typography color='primary' variant='subtitle2'>Area</Typography>
                                     <div style={{ display: 'flex', alignItems: 'center' }}>
                                         <BsTextarea size={25} style={{ color: 'lightBlue' }} />
-                                        <span style={{ color: 'blue', marginLeft: '5px' }}> 5343 Sq Ft</span>
+                                        <span style={{ color: '#63bcef', marginLeft: '5px' }}> 5343 Sq Ft</span>
                                     </div>
                                 </Item>
                             </Grid>
