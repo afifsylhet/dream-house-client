@@ -66,13 +66,13 @@ const Agents = () => {
                                         <Typography variant="h6" sx={{ textAlign: 'center', fontWeight: '500', marginBottom: '11px' }}>
                                             {data.name}
                                         </Typography>
-                                        <Typography sx={{ textAlign: 'center', fontWeight: '400', marginBottom: '11px', color: '#63bcef' }}>
+                                        <Typography sx={{ textAlign: 'center', fontWeight: '400', marginBottom: '11px', color: '#20b759' }}>
                                             {data.phoneNumber}
                                         </Typography>
                                         <Typography sx={{ textAlign: 'center', fontWeight: '400', marginBottom: '11px' }}>
                                             {data.email}
                                         </Typography>
-                                        <Typography vairant="h5" sx={{ textAlign: 'center', fontWeight: '700', marginBottom: '11px', color: '#63bcef' }}>
+                                        <Typography vairant="h5" sx={{ textAlign: 'center', fontWeight: '700', marginBottom: '11px', color: '#20b759' }}>
                                             {data.numberOfProperty}
                                         </Typography>
                                         <Typography sx={{ textAlign: 'center', fontWeight: '500', marginBottom: '11px' }}>

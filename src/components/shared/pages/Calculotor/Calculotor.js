@@ -66,13 +66,13 @@ const Calculotor = () => {
             <br />
             <Container>
                 <Typography sx={{
-                    color: '#63bcef', fontWeight: '700'
+                    color: 'blue', fontWeight: '700'
                 }} variant="h4" > Mortgage Calculator</Typography>
 
                 <Grid container spacing={2}>
                     < Grid item xs={12} md={6} lg={8}>
 
-                        <Typography variant='h6' sx={{ color: '#63bcef', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Term Years Fixed</Typography>
+                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Term Years Fixed</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={term}
@@ -86,7 +86,7 @@ const Calculotor = () => {
                         />
                         <br />
 
-                        <Typography variant='h6' sx={{ color: '#63bcef', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Interest in Parcent</Typography>
+                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Interest in Parcent</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={interest}
@@ -101,7 +101,7 @@ const Calculotor = () => {
                         />
                         <br />
 
-                        <Typography variant='h6' sx={{ color: '#63bcef', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Home Price in USD</Typography>
+                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Home Price in USD</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={homePrice}
@@ -115,7 +115,7 @@ const Calculotor = () => {
                             value={homePrice}
                         />
                         <br />
-                        <Typography variant='h6' sx={{ color: '#63bcef', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Down Payment in USD</Typography>
+                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Down Payment in USD</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={downPayment}

@@ -60,7 +60,7 @@ const News = () => {
                                             <Typography sx={{ fontWeight: '400', marginBottom: '7px', marginRight: "8px" }}>
                                                 {data.date}
                                             </Typography>
-                                            <Typography sx={{ textAlign: 'center', fontWeight: '400', marginBottom: '7px', color: '#63bcef' }}>
+                                            <Typography sx={{ textAlign: 'center', fontWeight: '400', marginBottom: '7px', color: '#20b759' }}>
                                                 {data.type}
                                             </Typography>
                                         </div>
@@ -72,10 +72,12 @@ const News = () => {
                                         <Typography sx={{ fontWeight: '400', marginBottom: '7px' }}>
                                             {data.details}
                                         </Typography>
-
-                                        <Typography sx={{ fontWeight: '500', marginBottom: '7px', color: '#63bcef' }}>
-                                            By {data.author}
-                                        </Typography>
+                                        <Box sx={{ display: 'flex' }}>
+                                            <Typography sx={{ fontWeight: '500', marginBottom: '7px', color: '#20b759', marginRight: '5px' }}>By</Typography>
+                                            <Typography sx={{ fontWeight: '500' }}>
+                                                {data.author}
+                                            </Typography>
+                                        </Box>
                                     </CardContent>
                                 </CardActionArea>
                             </Card>

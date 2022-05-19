@@ -1,11 +1,34 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from "react";
+
+
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { Container } from '@mui/material';
+import { Button, CardActions, Container, Grid, CardContent, CardMedia } from '@mui/material';
 
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const ShowProduct = () => {
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "./SwipeTest.css";
+
+// import required modules
+import { Pagination } from "swiper";
+
+
+// React Icon
+
+import { GoLocation } from 'react-icons/go';
+import { IoBedOutline } from 'react-icons/io5';
+import { FaShower } from 'react-icons/fa';
+import { BsTextarea } from 'react-icons/bs';
+import { styled } from '@mui/material/styles';
+
+
+const SwiperTest = () => {
 
     const [product, setProduct] = useState([]);
     useEffect(() => {
@@ -16,6 +39,20 @@ const ShowProduct = () => {
 
     const data = product.slice(3, 6)
 
+    const Item = styled(Box)(({ theme }) => ({
+        ...theme.typography.body2,
+        padding: theme.spacing(1),
+        textAlign: 'left',
+        // color: theme.palette.text.primary,
+    }));
+
+    // Swiper pagination function
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+    };
 
     return (
         <div>
@@ -31,27 +68,36 @@ const ShowProduct = () => {
                     <br />
                     <br />
 
-                    {/* Swiper */}
 
+                    {/* Swiper Start Here */}
+                    <Swiper
+                        pagination={pagination}
+                        modules={[Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>Slide 1</SwiperSlide>
+                    </Swiper>
 
+                    {/* Swiper end here */}
 
+                    <Box sx={{ maxWidth: 800, flexGrow: 1, textAlign: 'center', zIndex: '1', position: 'relative' }}>
 
+                        {/* <Container fluid>
+                            <img src='https://i.ibb.co/sy24rm4/flat-8-img-1.jpg' alt='hello' />
+                        </Container> */}
 
-
-
-
-
-
-                    <Box sx={{ maxWidth: 700, flexGrow: 1, textAlign: 'center', zIndex: '1', position: 'relative' }}>
-
-
-                        <img src='https://i.ibb.co/sy24rm4/flat-8-img-1.jpg' alt='hello' style={{ height: '100%', paddingRight: '10px', width: '275' }} />
+                        <CardMedia
+                            component="img"
+                            height="300"
+                            image="https://i.ibb.co/sy24rm4/flat-8-img-1.jpg"
+                            alt="green iguana"
+                        />
 
                         {/* Card Content  */}
 
-                        <Box sx={{ backgroundColor: 'white', zIndex: '2', position: 'relative', marginLeft: '5%', marginRight: '5%', marginTop: '30px' }}
+                        <Box sx={{ backgroundColor: 'white', zIndex: '2', position: 'relative', marginLeft: '10%', marginRight: '10%', marginTop: '-100px' }}
                         >
-                            {/* <CardContent sx={{ textAlign: 'left' }}>
+                            <CardContent sx={{ textAlign: 'left', maxWidth: '300px' }}>
                                 <Typography gutterBottom variant="h6" component="div" sx={{ color: '#20b759' }}>
                                     {data.name1}
                                 </Typography>
@@ -60,6 +106,8 @@ const ShowProduct = () => {
 
                                 <Grid container columnSpacing={1} >
                                     <Grid item sx={{ minWidth: '95px' }}>
+
+
                                         <Item sx={{ paddingLeft: '0px', marginLeft: '0px' }} >
                                             <Typography variant='subtitle2' sx={{ color: '#20b759' }} >Bedrooms</Typography>
                                             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -90,16 +138,12 @@ const ShowProduct = () => {
                                     </Grid>
                                 </Grid>
                                 <Typography variant='body' sx={{ color: '#20b759' }}>{data.type}</Typography>
-                            </CardContent> */}
+                            </CardContent>
 
-
-
-
-
-                            {/* <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
                                 <Button sx={{ color: '#20b759' }} >$ {data.price}</Button>
                                 <Button variant='contained' sx={{ backgroundColor: '#20b759' }} >Show Details</Button>
-                            </CardActions> */}
+                            </CardActions>
                         </Box>
                     </Box>
                 </Box>
@@ -109,4 +153,4 @@ const ShowProduct = () => {
     );
 };
 
-export default ShowProduct;
+export default SwiperTest;

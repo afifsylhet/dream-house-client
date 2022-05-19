@@ -17,7 +17,7 @@ const AfterBenner = () => {
                             and business owners worldwide
                         </Typography>
 
-                        <Typography sx={{ fontWeight: '400', marginBottom: '15px', color: '#63bcef' }}>
+                        <Typography sx={{ fontWeight: '400', marginBottom: '15px', color: '#20b759' }}>
                             orem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation.Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as
                         </Typography>
 
@@ -27,7 +27,7 @@ const AfterBenner = () => {
                             </div>
                             <div style={{ marginTop: '30px' }}>
                                 <p style={{ fontWeight: '500', margin: '0px' }}>Harry Porder</p>
-                                <p style={{ fontWeight: '400px', margin: '0px', color: '#63bcef' }}>Company Owner</p>
+                                <p style={{ fontWeight: '400px', margin: '0px', color: '#20b759' }}>Company Owner</p>
                             </div>
                         </div>
 

@@ -7,10 +7,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { createTheme } from '@mui/material/styles';
+
 
 import { FaHome } from 'react-icons/fa';
 
@@ -38,8 +38,21 @@ const Navigation = () => {
         setAnchorElUser(null);
     };
 
+
+
+    const theme = createTheme({
+        palette: {
+            primary: {
+                light: '#757ce8',
+                main: '#20b759',
+                dark: '#002884',
+                contrastText: '#fff',
+            }
+        },
+    });
+
     return (
-        <AppBar position="static">
+        <AppBar position="static" style={{ backgroundColor: '#20b759' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
@@ -48,7 +61,7 @@ const Navigation = () => {
                         component="div"
                         sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}
                     >
-                        <FaHome />   Dream House
+                        <FaHome style={{ marginRight: '5px' }} />   Dream House
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

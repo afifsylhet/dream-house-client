@@ -1,5 +1,4 @@
-import React from 'react';
-import { data } from '../../../../fakeData'
+import React, { useState, useEffect } from 'react';
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -20,69 +19,100 @@ const Item = styled(Box)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'left',
-    color: theme.palette.text.primary,
+    // color: theme.palette.text.primary,
 }));
 
 
 const Product = () => {
 
-    const product = data.slice(0, 6);
-    console.log(product)
+    const [product, setProduct] = useState([]);
+    useEffect(() => {
+        fetch('./websiteData.json')
+            .then(res => res.json())
+            .then(data => setProduct(data))
+    }, [])
+
+    const data = product.slice(0, 3)
+
+
+
     return (
         <div>
             <Container>
-                <Card sx={{ maxWidth: 345 }}>
-                    <CardMedia
-                        component="img"
-                        height="180"
-                        image="https://i.ibb.co/NLM57SB/flat-1-img-1.jpg"
-                    />
-                    <CardContent>
-                        <Typography color='primary' gutterBottom variant="h6" component="div">
-                            Home in Mami, Florida
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            <GoLocation /> Merrick Way, Miami, FL 33134, USA
-                        </Typography>
+                <Box sx={{ textAlign: 'center' }}>
+                    <br />
+                    <Typography sx={{ color: '#8ea69a' }} > Recent</Typography>
+                    <Typography sx={{ color: '#1a1a1a', marginY: '3px', fontWeight: '400' }} variant="h4"> Properties</Typography>
+                    <Typography sx={{ color: '#8ea69a' }}> Check out some of our latest properties.</Typography>
+                </Box>
 
-                        <Grid container columnSpacing={1} >
-                            <Grid item sx={{ minWidth: '95px' }}>
-                                <Item sx={{ paddingLeft: '0px', marginLeft: '0px' }} >
-                                    <Typography color='primary' variant='subtitle2' >Bedrooms</Typography>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <IoBedOutline size={25} style={{ color: 'lightBlue' }} />
-                                        <span style={{ color: '#63bcef', marginLeft: '5px' }}>3</span>
-                                    </div>
-                                </Item>
-                            </Grid>
 
-                            <Grid item sx={{ minWidth: '95px' }}>
-                                <Item sx={{ paddingLeft: '0px', marginLeft: '0px' }} >
-                                    <Typography color='primary' variant='subtitle2'>Bathrooms</Typography>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <FaShower size={25} style={{ color: 'lightBlue' }} />
-                                        <span style={{ color: '#63bcef', marginLeft: '5px' }}>3</span>
-                                    </div>
-                                </Item>
-                            </Grid>
+                <br />
 
-                            <Grid item sx={{ minWidth: '95px' }} >
-                                <Item sx={{ paddingLeft: '0px', marginLeft: '0px' }} >
-                                    <Typography color='primary' variant='subtitle2'>Area</Typography>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <BsTextarea size={25} style={{ color: 'lightBlue' }} />
-                                        <span style={{ color: '#63bcef', marginLeft: '5px' }}> 5343 Sq Ft</span>
-                                    </div>
-                                </Item>
-                            </Grid>
+                <Grid container spacing={{ xs: 2, md: 3 }} >
+                    {data.map((data) => (
+                        <Grid item xs={12} md={6} lg={4} data={data} key={data.sl}>
+                            <Item>
+
+
+
+
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="180"
+                                        image={data.img}
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h6" component="div" sx={{ color: 'black', fontWeight: '400' }}>
+                                            {data.name1}
+                                        </Typography>
+                                        <Typography variant="body2" sx={{ color: '#20b759' }}>
+                                            <GoLocation /> {data.location}
+                                        </Typography>
+
+                                        <Grid container columnSpacing={1} >
+                                            <Grid item sx={{ minWidth: '95px' }}>
+                                                <Item sx={{ paddingLeft: '0px', marginLeft: '0px' }} >
+                                                    <Typography sx={{ color: 'black' }} variant='subtitle2' >Bedrooms</Typography>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <IoBedOutline size={25} style={{ color: '#20b759' }} />
+                                                        <span style={{ color: '#20b759', marginLeft: '5px' }}>{data.bedRoom}</span>
+                                                    </div>
+                                                </Item>
+                                            </Grid>
+
+                                            <Grid item sx={{ minWidth: '95px' }}>
+                                                <Item sx={{ paddingLeft: '0px', marginLeft: '0px' }} >
+                                                    <Typography sx={{ color: 'black' }} variant='subtitle2'>Bathrooms</Typography >
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <FaShower size={25} style={{ color: '#20b759' }} />
+                                                        <span style={{ color: '#20b759', marginLeft: '5px' }}>{data.bathRoom}</span>
+                                                    </div>
+                                                </Item>
+                                            </Grid>
+
+                                            <Grid item sx={{ minWidth: '95px' }} >
+                                                <Item sx={{ paddingLeft: '0px', marginLeft: '0px' }} >
+                                                    <Typography sx={{ color: 'black' }} variant='subtitle2'>Area</Typography>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <BsTextarea size={25} style={{ color: '#20b759' }} />
+                                                        <span style={{ color: '#20b759', marginLeft: '5px' }}> {data.area} Sq Ft</span>
+                                                    </div>
+                                                </Item>
+                                            </Grid>
+                                        </Grid>
+                                        <Typography variant='body' sx={{ color: 'black' }}>{data.type}</Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <Button sx={{ color: '#20b759' }}>$ {data.price}</Button>
+                                        <Button variant='contained' sx={{ backgroundColor: '#20b759' }} > Show Details...</Button>
+                                    </CardActions>
+                                </Card>
+                            </Item>
                         </Grid>
-                        <Typography variant='body' color='primary'>For Sale</Typography>
-                    </CardContent>
-                    <CardActions sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <Button >$ 260000</Button>
-                        <Button variant='contained' color='primary' >Learn More</Button>
-                    </CardActions>
-                </Card>
+                    ))}
+                </Grid>
             </Container>
         </div>
     )

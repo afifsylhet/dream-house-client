@@ -12,6 +12,7 @@ import ProductView from './components/ProductView/ProductView';
 import Agents from './components/shared/pages/Agents/Agents';
 import News from './components/shared/pages/News/News';
 import AfterBenner from './components/shared/pages/AfterBenner/AfterBenner';
+import SwiperTest from './components/shared/pages/testPage/SwiperTest';
 
 
 function App() {
@@ -21,14 +22,15 @@ function App() {
       <BrowserRouter>
         <Navigation></Navigation>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="productView" element={<ProductView />} />
         </Routes>
         <Agents></Agents>
         <News></News>
+        <AfterBenner></AfterBenner>
+        <SwiperTest></SwiperTest>
       </BrowserRouter>
-      <AfterBenner></AfterBenner>
     </div>
   );
 }

@@ -188,7 +188,7 @@ export const data = [
         sl: 6,
         name1: "Villa in Hadsone Street",
         location: "Hallry Sopt, Hadsone Street, TX 30711, USA",
-        type: "For Sale",
+        type: "For Rent",
         price: 930450,
         img: [
             "https://i.ibb.co/kxJ0sv0/flat-6-img-1.jpg",
@@ -225,7 +225,7 @@ export const data = [
         sl: 7,
         name1: "Traditional Food Restaurant",
         location: "Clinton Street, New York, NY 5711, USA",
-        type: "For Sale",
+        type: "For Rent",
         price: 293450,
         img: [
             "https://i.ibb.co/6DGj6j2/flat-7-img-1.jpg",
@@ -262,7 +262,7 @@ export const data = [
         sl: 8,
         name1: "Office Space in Wall Street",
         location: "Samara Avenue, Wall Street, WS 6121, USA",
-        type: "For Sale",
+        type: "For Rent",
         price: 597453,
         img: [
             "https://i.ibb.co/0hcL3DL/flat-8-img-1.jpg",

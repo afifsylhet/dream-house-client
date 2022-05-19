@@ -93,6 +93,7 @@ const ImgaeSlide = () => {
                             size="small"
                             onClick={handleNext}
                             disabled={activeStep === maxSteps - 1}
+                            sx={{ color: '#20b759' }}
                         >
                             Next
                             {theme.direction === 'rtl' ? (
@@ -103,7 +104,8 @@ const ImgaeSlide = () => {
                         </Button>
                     }
                     backButton={
-                        <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+                        <Button size="small" onClick={handleBack} disabled={activeStep === 0} sx={{ color: '#20b759' }}
+                        >
                             {theme.direction === 'rtl' ? (
                                 <KeyboardArrowRight />
                             ) : (
@@ -118,28 +120,27 @@ const ImgaeSlide = () => {
             <Box className='topForm'
                 sx={{ padding: '20px', fontWeight: 'bold', backgroundColor: 'white' }}
             >
-                <Typography variant="h5" component="div" color='primary' sx={{ marginBottom: '5px' }}>
+                <Typography variant="h5" component="div" sx={{ marginBottom: '5px', color: '#20b759' }}>
                     Let Us Call You!
                 </Typography>
-                <Typography color='primary' sx={{ marginBottom: '20px' }}>
+                <Typography sx={{ marginBottom: '20px', color: '#20b759' }}>
                     To help you choose your property                </Typography>
 
                 <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'space-between' }}>
-                    <TextField id="outlined-basic" label="Your Name" variant="outlined" size="small" color='primary' sx={{ width: '47%' }} />
+                    <TextField id="outlined-basic" label="Your Name" variant="outlined" size="small" sx={{ width: '47%', color: '#20b759' }} />
 
-                    <TextField id="outlined-basic" label="Your Cell Number" variant="outlined" size="small" color='primary' sx={{ width: '47%' }} />
+                    <TextField id="outlined-basic" label="Your Cell Number" variant="outlined" size="small" sx={{ width: '47%', color: '#20b759' }} />
                 </div>
 
                 <TextField
                     label="Tell us about desired property"
                     variant="outlined"
-                    color='primary'
                     size="small"
                     multiline
                     rows={4}
-                    sx={{ width: '100%', marginBottom: '20px' }}
+                    sx={{ width: '100%', marginBottom: '20px', color: '#20b759' }}
                 />
-                <Typography color='primary' sx={{ marginBottom: '5px' }}>GDPR Agreement *</Typography>
+                <Typography sx={{ marginBottom: '5px', color: '#20b759' }}>GDPR Agreement *</Typography>
 
                 <div
                     style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}
@@ -147,16 +148,14 @@ const ImgaeSlide = () => {
                     <Checkbox sx={{ padding: '0px', }} />
 
                     <Typography
-                        color='primary'
-                        sx={{ marginLeft: '10px', display: 'inline' }}
+                        sx={{ marginLeft: '10px', display: 'inline', color: '#20b759' }}
                     >
                         I consent to having this website store my submitted information so they can respond to my inquiry</Typography>
                 </div>
 
                 <Button
                     variant='contained'
-                    color='primary'
-                    sx={{ width: '100%', padding: '10px 0px' }}
+                    sx={{ width: '100%', padding: '10px 0px', color: 'black', backgroundColor: '#20b759' }}
                 >
                     Submit
                 </Button>
