@@ -10,12 +10,21 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { createTheme } from '@mui/material/styles';
+import { NavLink } from 'react-router-dom';
 
 
 import { FaHome } from 'react-icons/fa';
 
 
-const pages = ['Home', 'About', 'All Listing', 'Contact'];
+const pages = ['Home', 'About', 'All Listing', 'Mortgage Calculator', 'Contact'];
+
+const RoutesAndLinks = [
+    { name: 'Home', link: '/home' },
+    { name: 'About', link: '/about' },
+    { name: 'All Listing', link: '/allProduct' },
+    { name: 'Mortgate Calculator', link: '/calculator' },
+    { name: 'Contact', link: 'contact' }
+]
 
 
 
@@ -93,9 +102,11 @@ const Navigation = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
+                            {RoutesAndLinks.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <NavLink to={page.link} style={{ textDecoration: 'none' }}>
+                                        <Typography textAlign="center">{page.name}</Typography>
+                                    </NavLink>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -109,16 +120,23 @@ const Navigation = () => {
                         <FaHome />  Dream House
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'end' }}>
-                        {pages.map((page) => (
-                            <Button
+                        {RoutesAndLinks.map((page) => (
+                            <NavLink
+                                to={page.link}
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
-                            </Button>
+                                style={{ textDecoration: 'none' }}>
+                                <Button
+                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                >
+                                    {page.name}
+                                </Button>
+                            </NavLink>
                         ))}
                     </Box>
+
+
+
 
                     {/* <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">

@@ -64,6 +64,8 @@ const Calculotor = () => {
 
         <div>
             <br />
+            <br />
+            <br />
             <Container>
                 <Typography sx={{
                     color: 'blue', fontWeight: '700'
@@ -72,7 +74,7 @@ const Calculotor = () => {
                 <Grid container spacing={2}>
                     < Grid item xs={12} md={6} lg={8}>
 
-                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Term Years Fixed</Typography>
+                        <Typography variant='h6' sx={{ color: 'green', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Term Years Fixed</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={term}
@@ -86,7 +88,7 @@ const Calculotor = () => {
                         />
                         <br />
 
-                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Interest in Parcent</Typography>
+                        <Typography variant='h6' sx={{ color: 'green', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Interest in Parcent</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={interest}
@@ -101,7 +103,7 @@ const Calculotor = () => {
                         />
                         <br />
 
-                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Home Price in USD</Typography>
+                        <Typography variant='h6' sx={{ color: 'green', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Home Price in USD</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={homePrice}
@@ -115,7 +117,7 @@ const Calculotor = () => {
                             value={homePrice}
                         />
                         <br />
-                        <Typography variant='h6' sx={{ color: 'blue', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Down Payment in USD</Typography>
+                        <Typography variant='h6' sx={{ color: 'green', fontWeight: '400', marginTop: '5px', marginBottom: '5px' }}> Down Payment in USD</Typography>
 
                         <input style={{ width: '100%', height: '35px', marginTop: '5px', marginBottom: '5px', paddingLeft: '10px', border: '2px solid #ADD8E6' }}
                             value={downPayment}
@@ -153,22 +155,21 @@ const Calculotor = () => {
                                 <YAxis />
                                 <Tooltip />
                                 <Legend />
-                                <Bar dataKey="Home_Price" fill="#8884d8" />
-                                <Bar dataKey="Down_Payment" fill="#82ca9d" />
+                                <Bar dataKey="Home_Price" fill="blue" />
+                                <Bar dataKey="Down_Payment" fill="#20e759" />
                                 <Bar dataKey="Interest_Rate" fill="#808080" />
                             </BarChart>
                         </ResponsiveContainer>
                         <br />
-                        <div style={{ paddingTop: '8px', paddingBottom: '5px', backgroundColor: '#ADD8E6', margin: '8px' }}>
+                        <div style={{ paddingTop: '8px', paddingBottom: '5px', backgroundColor: '#20e759', margin: '8px' }}>
                             <h3 style={{ textAlign: 'center' }}> Your Monthly Payment is </h3>
                             <h3 style={{ textAlign: 'center' }}> {monthylyPaymet} USD Per Month </h3>
                         </div>
-
-
                     </Grid>
                 </Grid>
             </Container>
-
+            <br />
+            <br />
         </div >
     );
 };

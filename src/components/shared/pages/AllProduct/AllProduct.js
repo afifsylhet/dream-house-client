@@ -22,45 +22,42 @@ const Item = styled(Box)(({ theme }) => ({
     textAlign: 'left',
     // color: theme.palette.text.primary,
 }));
-
-
-const Product = (props) => {
+const AllProduct = (props) => {
 
     const { product } = props;
 
-    const data = product.slice(0, 3)
 
-
+    const data = product;
 
     return (
         <div>
             <Container>
                 <Box sx={{ textAlign: 'center' }}>
                     <br />
-                    <Typography sx={{ color: '#8ea69a' }} > Recent</Typography>
+                    <Typography sx={{ color: '#8ea69a' }} > All listed </Typography>
                     <Typography sx={{ color: '#1a1a1a', marginY: '3px', fontWeight: '400' }} variant="h4"> Properties</Typography>
-                    <Typography sx={{ color: '#8ea69a' }}> Check out some of our latest properties.</Typography>
+                    <Typography sx={{ color: '#8ea69a' }}> Check out from our all properties.</Typography>
                 </Box>
 
 
                 <br />
 
                 <Grid container spacing={{ xs: 2, md: 3 }} >
-                    {data?.map((data) => (
+                    {data.map((data) => (
                         <Grid item xs={12} md={6} lg={4} data={data} key={data.sl}>
                             <Item sx={{ display: 'flex', justifyContent: 'center' }}>
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardMedia
                                         component="img"
                                         height="180"
-                                        image={data?.img}
+                                        image={data.img}
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h6" component="div" sx={{ color: 'black', fontWeight: '400' }}>
-                                            {data?.name1}
+                                            {data.name1}
                                         </Typography>
                                         <Typography variant="body2" sx={{ color: '#20b759' }}>
-                                            <GoLocation /> {data?.location}
+                                            <GoLocation /> {data.location}
                                         </Typography>
 
                                         <Grid container columnSpacing={1} >
@@ -103,6 +100,7 @@ const Product = (props) => {
                                             <Button variant='contained' sx={{ backgroundColor: '#20b759' }} > Show Details...</Button>
                                         </NavLink>
 
+
                                     </CardActions>
                                 </Card>
                             </Item>
@@ -110,8 +108,9 @@ const Product = (props) => {
                     ))}
                 </Grid>
             </Container>
-        </div>
-    )
+            <br />
+        </div >
+    );
 };
 
-export default Product;
+export default AllProduct;

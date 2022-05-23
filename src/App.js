@@ -9,27 +9,43 @@ import {
 } from "react-router-dom";
 import Home from './components/home/Home';
 import ProductView from './components/ProductView/ProductView';
-import Agents from './components/shared/pages/Agents/Agents';
-import News from './components/shared/pages/News/News';
-import AfterBenner from './components/shared/pages/AfterBenner/AfterBenner';
-import SwiperTest from './components/shared/pages/testPage/SwiperTest';
+import Footer from './components/shared/Footer/Footer';
+import AllProduct from './components/shared/pages/AllProduct/AllProduct';
+import Contact from './components/shared/pages/Contact/Contact';
+import About from './components/shared/pages/About/About';
+import Calculotor from './components/shared/pages/Calculotor/Calculotor';
+import Error from './components/shared/pages/Error/Error';
+import SingleProducts from './components/shared/pages/SingleProducts/SingleProducts';
+import { useEffect, useState } from 'react';
+
 
 
 function App() {
+
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    fetch('./websiteData.json')
+      .then(res => res.json())
+      .then(data => setProduct(data))
+  }, [])
+
+
   return (
     <div>
-
       <BrowserRouter>
         <Navigation></Navigation>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="productView" element={<ProductView />} />
+          <Route path="/home" element={<Home product={product} />} />
+          <Route path="/productView/:id" element={<ProductView product={product} />} />
+          <Route path="/allProduct" element={<AllProduct product={product} />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/calculator" element={<Calculotor />} />
+          <Route path="*" element={< Error />} />
         </Routes>
-        <Agents></Agents>
-        <News></News>
-        <AfterBenner></AfterBenner>
-        <SwiperTest></SwiperTest>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

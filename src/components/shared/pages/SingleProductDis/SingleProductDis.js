@@ -18,7 +18,7 @@ const Item = styled(Box)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'left',
-    color: theme.palette.text.primary,
+    // color: theme.palette.text.primary,
 }));
 
 const SingleProductDis = () => {
@@ -145,11 +145,7 @@ const SingleProductDis = () => {
                 <Typography variant='h5' sx={{ martinTop: '15px', color: '#795548', marginBottom: '15px' }}>Common Notes</Typography>
 
                 <Typography sx={{ padding: '15px', color: '#795548', backgroundColor: '#FBFAF0' }}>This is a sample note to share some basic information on all properties. This note can be enabled or disabled from Real Homes settings and its text plus label is fully customizable.</Typography>
-
-
-
             </Container >
-
         </div >
     );
 };

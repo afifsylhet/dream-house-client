@@ -19,13 +19,13 @@ const SingleProductHeading = () => {
             <Container>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <div>
-                        <Typography color='primary' variant='h5'>Home in Merrick Way</Typography>
-                        <Typography sx={{ color: '#795548' }} variant='body2'>Merrick Way, Miami, FL 33134, USA</Typography>
+                        <Typography sx={{ color: 'black' }} variant='h5'>Home in Merrick Way</Typography>
+                        <Typography sx={{ color: '#20e759' }} variant='body2'>Merrick Way, Miami, FL 33134, USA</Typography>
                     </div>
 
                     <div style={{ borderLeft: '3px solid #795548', paddingLeft: '10px' }}>
-                        <Typography sx={{ color: '#795548' }} variant='body2'>For Sale</Typography>
-                        <Typography sx={{ color: '#795548' }} variant='h5'>For Sale</Typography>
+                        <Typography sx={{ color: '#20e759' }} variant='body2'>For Sale</Typography>
+                        <Typography sx={{ color: '#20e759' }} variant='h5'>For Sale</Typography>
                     </div>
                 </div>
                 <ImageList
