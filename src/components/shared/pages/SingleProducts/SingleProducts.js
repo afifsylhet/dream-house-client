@@ -97,7 +97,7 @@ const SingleProducts = () => {
     }
 
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             {/* Image List Starts from here */}
             <div>
                 <br />

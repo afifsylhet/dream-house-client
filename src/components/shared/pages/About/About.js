@@ -9,7 +9,7 @@ import { FaPeopleArrows } from 'react-icons/fa'
 
 const About = () => {
     return (
-        <div style={{ backgroundColor: '#f7f8f9' }}>
+        <div style={{ backgroundColor: '#f7f8f9', fontFamily: 'roboto' }}>
             <Box sx={{ backgroundColor: '#20e759', paddingX: '15%' }}>
                 <br />
                 <br />

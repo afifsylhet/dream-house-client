@@ -33,7 +33,7 @@ const Product = (props) => {
 
 
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             <Container>
                 <Box sx={{ textAlign: 'center' }}>
                     <br />

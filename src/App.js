@@ -36,7 +36,7 @@ function App() {
       <BrowserRouter>
         <Navigation></Navigation>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home product={product} />} />
           <Route path="/home" element={<Home product={product} />} />
           <Route path="/productView/:id" element={<ProductView product={product} />} />
           <Route path="/allProduct" element={<AllProduct product={product} />} />

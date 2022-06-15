@@ -5,7 +5,7 @@ const Contact = () => {
 
 
     return (
-        <div style={{ backgroundColor: '#f7f8f9' }} >
+        <div style={{ backgroundColor: '#f7f8f9', fontFamily: 'roboto' }} >
             <Container>
                 <br />
                 <Grid container spacing={{ xs: 2, md: 3 }} >
@@ -14,7 +14,7 @@ const Contact = () => {
                         <br />
                         <Box sx={{ backgroundColor: 'white', padding: '22px' }}>
                             <Typography sx={{ fontWeight: '400' }}>
-                                Please fill out the bellow form to contact us.We are happy to answer your queries.ms with this Houzez Elementor custom widget and connect your leads with the integrated ms with this Houzez Elementor custom widget and connect your leads with the integrated
+                                Please fill out the bellow form to contact us.We are happy to answer your queries.lease fill out the bellow form to contact us.We are happy to answer your queries.lease fill out the bellow form to contact us.We are happy to answer your queries.lease fill out the bellow form to contact us.We are happy to answer your queries.
                             </Typography>
                             <br />
                             <form>

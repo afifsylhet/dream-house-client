@@ -14,7 +14,7 @@ function srcset(image, size, rows = 2, cols = 3) {
 
 const SingleProductHeading = () => {
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             <br />
             <Container>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>

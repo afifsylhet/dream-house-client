@@ -19,7 +19,7 @@ import { MdMarkEmailUnread } from 'react-icons/md';
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: '#303030', padding: '20px' }}>
+        <div style={{ backgroundColor: '#303030', padding: '20px', fontFamily: 'roboto' }}>
 
             <Box>
                 <Grid container spacing={{ xs: 2, md: 3 }}  >

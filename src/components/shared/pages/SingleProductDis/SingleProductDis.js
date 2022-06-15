@@ -23,7 +23,7 @@ const Item = styled(Box)(({ theme }) => ({
 
 const SingleProductDis = () => {
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             <Container>
                 <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                     <Typography variant="h6" sx={{ color: '#795548' }}>Property ID: PG-2022-01 </Typography>
@@ -113,7 +113,7 @@ const SingleProductDis = () => {
 
                 <Box sx={{ marginLeft: '25px', color: '#795548', marginBottom: '15px' }}>
                     <Box sx={{ paddingTop: '10px', paddingBottom: '10px', paddingLeft: '10px' }}>
-                        <span>BEDROOM FEATURES :</span>
+                        <span>BEDROOM FEATURES  :</span>
                         <span> Main Floor Master Bedroom, Walk-In Closet</span>
                     </Box>
                     <Box sx={{ paddingTop: '10px', paddingBottom: '10px', backgroundColor: '#FBFAF0', paddingLeft: '10px' }}>
@@ -144,7 +144,7 @@ const SingleProductDis = () => {
                 </Box>
                 <Typography variant='h5' sx={{ martinTop: '15px', color: '#795548', marginBottom: '15px' }}>Common Notes</Typography>
 
-                <Typography sx={{ padding: '15px', color: '#795548', backgroundColor: '#FBFAF0' }}>This is a sample note to share some basic information on all properties. This note can be enabled or disabled from Real Homes settings and its text plus label is fully customizable.</Typography>
+                <Typography sx={{ padding: '15px', color: '#795548', backgroundColor: '#FBFAF0' }}>This is a sample note to share some basic information on all properties. This note can be enabled or disabled from Real Homes settings and its text plus label is fully customizable. Afif</Typography>
             </Container >
         </div >
     );

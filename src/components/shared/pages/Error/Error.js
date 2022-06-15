@@ -3,7 +3,7 @@ import React from 'react';
 
 const Error = () => {
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             <Container>
                 <br />
                 <br />

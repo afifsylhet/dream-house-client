@@ -19,7 +19,7 @@ const Item = styled(Box)(({ theme }) => ({
 
 const SingleProduct = () => {
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             <SingleProductHeading></SingleProductHeading>
 
             <Container>

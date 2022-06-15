@@ -57,8 +57,7 @@ const ImgaeSlide = () => {
     };
 
     return (
-        <div>
-
+        <div style={{ fontFamily: 'roboto' }}>
             <Box className='topFormContainer'>
                 <AutoPlaySwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

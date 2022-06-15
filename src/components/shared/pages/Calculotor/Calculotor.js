@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import './Calculotor.css'
 
 
 
@@ -62,13 +63,13 @@ const Calculotor = () => {
 
     return (
 
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             <br />
             <br />
             <br />
             <Container>
                 <Typography sx={{
-                    color: 'blue', fontWeight: '700'
+                    color: '#795548', fontWeight: '700'
                 }} variant="h4" > Mortgage Calculator</Typography>
 
                 <Grid container spacing={2}>
@@ -155,19 +156,22 @@ const Calculotor = () => {
                                 <YAxis />
                                 <Tooltip />
                                 <Legend />
-                                <Bar dataKey="Home_Price" fill="blue" />
+                                <Bar dataKey="Home_Price" fill="#795548" />
                                 <Bar dataKey="Down_Payment" fill="#20e759" />
                                 <Bar dataKey="Interest_Rate" fill="#808080" />
                             </BarChart>
                         </ResponsiveContainer>
                         <br />
-                        <div style={{ paddingTop: '8px', paddingBottom: '5px', backgroundColor: '#20e759', margin: '8px' }}>
-                            <h3 style={{ textAlign: 'center' }}> Your Monthly Payment is </h3>
-                            <h3 style={{ textAlign: 'center' }}> {monthylyPaymet} USD Per Month </h3>
+                        <div style={{
+                            paddingTop: '8px', paddingBottom: '5px', backgroundColor: '#795548', margin: '8px'
+                        }}>
+                            <h3 style={{ textAlign: 'center' }
+                            } > Your Monthly Payment is </h3>
+                            <h3 style={{ textAlign: 'center', color: 'white', fontWeight: '500' }}> {monthylyPaymet} USD Per Month </h3>
                         </div>
                     </Grid>
                 </Grid>
-            </Container>
+            </Container >
             <br />
             <br />
         </div >

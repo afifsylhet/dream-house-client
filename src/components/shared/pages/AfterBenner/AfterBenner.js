@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 
 const AfterBenner = () => {
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
             <br />
             <Container>
                 <Grid container>

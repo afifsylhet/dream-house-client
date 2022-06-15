@@ -35,7 +35,7 @@ const ShowProduct = (props) => {
 
 
     return (
-        <div>
+        <div style={{ fontFamily: 'roboto' }}>
 
             <Container >
                 <Box>

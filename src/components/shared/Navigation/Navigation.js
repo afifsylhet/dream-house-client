@@ -61,7 +61,7 @@ const Navigation = () => {
     });
 
     return (
-        <AppBar position="static" style={{ backgroundColor: '#20b759' }}>
+        <AppBar position="static" style={{ backgroundColor: '#20b759', fontFamily: 'roboto' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
@@ -70,7 +70,7 @@ const Navigation = () => {
                         component="div"
                         sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}
                     >
-                        <FaHome style={{ marginRight: '5px' }} />   Dream House
+                        <FaHome style={{ marginRight: '5px' }} />   Dream House Real Estate
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

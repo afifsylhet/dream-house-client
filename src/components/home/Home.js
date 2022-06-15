@@ -17,9 +17,9 @@ const Home = (props) => {
             <br />
             <Product product={product}></Product>
             <br />
-            <ShowProduct product={product} ></ShowProduct>
-            <br />
             <Agents></Agents>
+            <br />
+            <ShowProduct product={product} ></ShowProduct>
             <br />
             <News></News>
             <br />
